@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/CSS/home.css}">
+<script type="text/javascript" th:src="@{/JS/myJavaScript.js}"></script>
+
+</head>
+<body>
+	<h1 class="c1">Welcome To AIT</h1>
+	<h1 th:text="${uName}"></h1>	
+	<img alt="" th:src="@{/images/male-student.png}" width="200" height="200">
+	
+	<a th:href="@{/home}">Go To Home</a>
+</body>
+</html>
